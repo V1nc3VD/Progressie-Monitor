@@ -1,25 +1,28 @@
 {
-  "name": "pmo",
+  "name": "project-4",
   "version": "1.0.0",
-  "description": "this is our pmo project",
-  "main": "index.js",
+  "description": "This is our project 4 scss",
+  "main": "index.html",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/V1nc3VD/Progressie-Monitor.git"
+    "url": "git+https://github.com/Prolite2003/Project-4.git"
   },
-  "author": "",
+  "author": "Stefan&Can",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/V1nc3VD/Progressie-Monitor/issues"
+    "url": "https://github.com/Prolite2003/Project-4issues"
   },
-  "homepage": "https://github.com/V1nc3VD/Progressie-Monitor#readme",
-  "devDependencies": {
-    "aos": "^2.3.4",
-    "gulp": "^4.0.2",
-    "gulp-sass": "^4.1.0",
-    "node-sass": "^5.0.0"
-  }
+  "homepage": "https://github.com/Prolite2003/Project-4readme"
 }
