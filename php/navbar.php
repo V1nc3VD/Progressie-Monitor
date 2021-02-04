@@ -15,7 +15,7 @@
               </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./index.php?content=aanmelden.php">Login/register</a>
+          <a class="nav-link" href="./index.php?content=lesmaken">Les maken</a>
         </li>
       </ul>
     </div>
