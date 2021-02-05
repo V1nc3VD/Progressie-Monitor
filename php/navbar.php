@@ -17,6 +17,9 @@
         <li class="nav-item">
           <a class="nav-link" href="./index.php?content=lesmaken">Les maken</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.php?content=leerling_cursussen">Mijn cursussen</a>
+        </li>
       </ul>
     </div>
   </div>
