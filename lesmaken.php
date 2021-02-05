@@ -16,7 +16,7 @@
               <option value="klaasrozen">K.Rozen</option>
           </select>
 
-          <label for="vakken">De vakken van de docent:</label>
+          <label for="vakken">De vakken van de cursusen:</label>
 
           <select class="vakken chosen-select" name="vakken">
               <option value="">-- Maak u keuze --</option>
@@ -38,16 +38,13 @@
           <select class="cursus chosen-select" name="cursus">
               <option value="">-- Maak u keuze --</option>
 
-              <option value="leerjaar1">Leerjaar1</option>
-              <option value="leerjaar2">Leerjaar2</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
           </select>
-          <label for="vantijd">Tijd van:</label>
 
-          <input type="time" name="vantijd" class="vantijd">
+          <label for="deadline">Deadline:</label>
 
-          <label for="tottijd">Tijd tot:</label>
-
-          <input type="time" name="tottijd" class="tottijd">
+          <input type="date" name="deadline" class="deadline">
 
 
           <label for="opdracht">opdracht:</label>
@@ -66,13 +63,17 @@
               <option value="opdracht10">Opdracht 10</option>
           </select>
 
-          <label for="leerlingleerjaar">Leerling Leerjaar:</label>
+          <label for="klas">klas:</label>
 
-          <select class="leerlingleerjaar chosen-select" name="leerlingleerjaar">
+          <select class="klas chosen-select" name="klas">
               <option value="">-- Maak u keuze --</option>
 
-              <option value="leerjaar1">Leerjaar1</option>
-              <option value="leerjaar2">Leerjaar2</option>
+              <option value="AM1A">AM1A</option>
+              <option value="AM1B">AM1B</option>
+              <option value="AM1C">AM1C</option>
+              <option value="AM2A">AM2A</option>
+              <option value="AM2B">AM2B</option>
+              <option value="AM2C">AM2C</option>
           </select>
 
           <label for="leerling">Leerling:</label>
@@ -80,10 +81,10 @@
           <select data-placeholder="-- Maak u keuze --" multiple class="leerling chosen-select" name="leerling">
               <!-- <option value=""></option> -->
 
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
+              <option value="peter">peter</option>
+              <option value="jan">jan</option>
+              <option value="klaas">klaas</option>
+              <option value="henk">henk</option>
           </select>
 
           <input id="submit" class="btn" type="submit" value="Verstuur">
