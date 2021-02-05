@@ -8,17 +8,16 @@
   $docent = sanitize($_POST["docent"]);
   $vakken = sanitize($_POST["vakken"]);
   $cursus = sanitize($_POST["cursus"]);
-  $vantijd = sanitize($_POST["vantijd"]);
-  $tottijd = sanitize($_POST["tottijd"]);
+  $deadline = sanitize($_POST["deadline"]);
   $opdracht = sanitize($_POST["opdracht"]);
-  $leerlingleerjaar = sanitize($_POST["leerlingleerjaar"]);
+  $klas = sanitize($_POST["klas"]);
   $leerling = sanitize($_POST["leerling"]);
 
   
   if (!empty($docent)&!empty($vakken)) {
 
   // Maak een select-query om te controleren of de docent al een les heeft in dat vak.
-  $sql = "SELECT * FROM lessen WHERE docent = '$docent' OR vakken = '$vakken'";
+  $sql = "SELECT * FROM les WHERE docent = '$docent' AND vak = '$vakken'";
 
   // Stuur de query af op de database
   $result = mysqli_query($conn, $sql);
@@ -34,18 +33,16 @@
     $sql = "INSERT INTO `les` (`docent`,
                                   `vak`, 
                                   `cursus`,
-                                  `vantijd`,
-                                  `tottijd`,
+                                  `deadline`,
                                   `opdracht`,
-                                  `leerlingleerjaar`,
+                                  `klas`,
                                   `leerling`)
                           VALUES ('$docent',
-                                  '$vak', 
+                                  '$vakken', 
                                   '$cursus',
-                                  '$vantijd',
-                                  '$tottijd',
+                                  '$deadline',
                                   '$opdracht',
-                                  '$leerlingleerjaar',
+                                  '$klas',
                                   '$leerling')";
   
     $result = mysqli_query($conn, $sql);
@@ -53,11 +50,11 @@ echo mysqli_error($conn);
     // Hiermee vraag je de door autonummering gemaakt id op
     $id = mysqli_insert_id($conn);
     echo 'U heeft een les gemaakt. <br> u word nu doorgestuurd naar de home pagina';
-    header( "refresh:5;url=../../index.php?content=index" );
+    header( "refresh:5;url=../../index.php" );
   }
 
 } else {
   echo '<div class="alert alert-danger" role="alert">U heeft niks in gevult.</div>';
-  header("Refresh: 4; url=../../index.php?content=lesmaken");
+  header("Refresh: 4; url=../../index.php");
 }
 ?>
