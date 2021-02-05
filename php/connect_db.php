@@ -3,6 +3,6 @@
   $hostname = "localhost";
   $username = "root";
   $password = "";
-  $dbname = "lesrooster";
+  $dbname = "progressie-monitor";
 
   $conn = mysqli_connect($hostname, $username, $password, $dbname);

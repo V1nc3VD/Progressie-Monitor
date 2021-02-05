@@ -2,8 +2,8 @@
 
   
   
-  include("./connect_db.php");
-  include("./functions.php");
+  include("../connect_db.php");
+  include("../functions.php");
 
   $docent = sanitize($_POST["docent"]);
   $vakken = sanitize($_POST["vakken"]);
