@@ -57,4 +57,3 @@ echo mysqli_error($conn);
   echo '<div class="alert alert-danger" role="alert">U heeft niks in gevult.</div>';
   header("Refresh: 4; url=../../index.php");
 }
-?>

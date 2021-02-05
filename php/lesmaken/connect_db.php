@@ -6,5 +6,3 @@
   $dbname = "lesrooster";
 
   $conn = mysqli_connect($hostname, $username, $password, $dbname);
-
-?>

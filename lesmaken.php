@@ -1,5 +1,6 @@
   <!-- Chosen template -->
   <link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet" />
+  <!-- <link href="./css/main.css" rel="stylesheet"> -->
   <form action="./php/lesmaken/lesmaken-script.php" method="post">
 
       <div class="lesmakencontent">
@@ -16,7 +17,7 @@
               <option value="klaasrozen">K.Rozen</option>
           </select>
 
-          <label for="vakken">De vakken van de cursusen:</label>
+          <br><label for="vakken">De vakken van de cursusen:</label>
 
           <select class="vakken chosen-select" name="vakken">
               <option value="">-- Maak u keuze --</option>
@@ -33,7 +34,7 @@
               <option value="project">Project</option>
           </select>
 
-          <label for="cursus">Cursus:</label>
+          <br><br><br><label for="cursus">Cursus:</label>
 
           <select class="cursus chosen-select" name="cursus">
               <option value="">-- Maak u keuze --</option>
@@ -42,12 +43,12 @@
               <option value="2">2</option>
           </select>
 
-          <label for="deadline">Deadline:</label>
+          <br><label for="deadline">Deadline:</label>
 
           <input type="date" name="deadline" class="deadline">
 
 
-          <label for="opdracht">opdracht:</label>
+          <br><label for="opdracht">opdracht:</label>
 
           <select data-placeholder="-- Maak u keuze --" multiple class="opdracht chosen-select" name="opdracht">
               <option value="">-- Maak u keuze --</option>
@@ -63,7 +64,7 @@
               <option value="opdracht10">Opdracht 10</option>
           </select>
 
-          <label for="klas">klas:</label>
+          <br><br><br><label for="klas">klas:</label>
 
           <select class="klas chosen-select" name="klas">
               <option value="">-- Maak u keuze --</option>
@@ -76,7 +77,7 @@
               <option value="AM2C">AM2C</option>
           </select>
 
-          <label for="leerling">Leerling:</label>
+          <br><label for="leerling">Leerling:</label>
 
           <select data-placeholder="-- Maak u keuze --" multiple class="leerling chosen-select" name="leerling">
               <!-- <option value=""></option> -->

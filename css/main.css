@@ -4,26 +4,14 @@ div.content {
   margin-top: 50px;
   margin-top: 10vh; }
 
-.loginbutton {
-  box-shadow: inset 20px 23px 0px -50px #7a8eb9;
-  background: linear-gradient(to bottom, #db5c5c 5%, #fbff00 100%);
-  background-color: #db5c5c;
-  border-radius: 42px;
-  border: 2px solid #ffffff;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Georgia;
-  font-size: 13px;
-  font-weight: bold;
-  font-style: italic;
-  padding: 8px 12px;
-  text-decoration: none; }
-
-.loginbutton:hover {
-  background: linear-gradient(to bottom, #fbff00 5%, #db5c5c 100%);
-  background-color: #fbff00; }
-
-.loginbutton:active {
-  position: relative;
-  top: 1px; }
+.lesmakencontent {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0;
+  text-align: center; }
+  .lesmakencontent label {
+    font-weight: bold; }
+  .lesmakencontent .opdracht ::placeholder {
+    text-align: center; }
+  .lesmakencontent h1 {
+    text-align: center; }
